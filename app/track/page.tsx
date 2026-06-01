@@ -12,8 +12,8 @@ export default function TrackPage() {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!trackingNumber.trim()) {
-      alert("Please enter a tracking number.");
+    if (trackingNumber.trim() !== '7829103847561928') {
+      alert("Tracking number not found. Please check your tracking ID and try again.");
       return;
     }
 
@@ -21,7 +21,7 @@ export default function TrackPage() {
       number: trackingNumber,
       status: 'Awaiting Pickup',
       origin: 'Nantes, France',
-      destination: 'India',
+      destination: 'Pakistan',
       departure: 'Nantes, France',
       eta: '2026-07-15',
       currentLocation: 'Nantes, France',
