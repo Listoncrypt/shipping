@@ -25,9 +25,6 @@ export default function TrackPage() {
       departure: 'Nantes, France',
       eta: '2026-07-15',
       currentLocation: 'Nantes, France',
-      item: 'Xbox Series S',
-      size: '27.5 x 15.1 x 6.5 cm',
-      weight: '1.93 kg',
       senderName: 'Leo Marceau De Sol',
       address: 'House No. 22-5-2 Street: No 5 mohalla sangolin usman barvi road lyari karachi south',
       alternateAddress: '22, 20, street: No 5-A Mohalla sangolin',
@@ -91,11 +88,6 @@ export default function TrackPage() {
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Status</p>
                     <p className="text-lg font-bold text-accent">{tracking.status}</p>
-                  </div>
-                  <div>
-                    <p className="text-sm text-muted-foreground mb-1">Item Details</p>
-                    <p className="text-md font-semibold text-foreground">{tracking.item}</p>
-                    <p className="text-xs text-muted-foreground">Size: {tracking.size} | Weight: {tracking.weight}</p>
                   </div>
                   <div>
                     <p className="text-sm text-muted-foreground mb-1">Sender</p>
